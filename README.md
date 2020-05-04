@@ -1,7 +1,5 @@
 Midi2trigger is Eurorack compatible module PCB for external MIDI device to trigger example drum modules.It’s a 100% non-commercial effort developed purely for own educational purposes where I’m trying to learn to understand schematics, KiCad and PCB making.
 
-I have tested and verified this board and code.
-
 I’d like to hear your feedback if you built this module so I can improve these files.
 
 # Design
@@ -19,7 +17,9 @@ Currently there’s no already made panel for this.
 These can be added to current PCB with soldering capacitors straight to LM7805 and cutting trace and adding jump wire to Arduino +5v pin.
 
 # Notes
-Thanks to
+I have tested and verified this board and code.
+
+# Thanks to
 - LookMumNoComputer (https://www.lookmumnocomputer.com) where I saw this on the one youtube video
 - Pieterv1 @circuitbenders.com | code and explanations that I found here: https://www.circuitbenders.co.uk/forum/index.php?topic=2656.0 
 
