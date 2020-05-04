@@ -7,6 +7,9 @@ At the beginning I never meant to make this as a PCB but I wanted to learn KiCad
 
 Schematic parts has taken from default Arduino MIDI in/thru schematics and various places.
 
+Arduino Pins are assigned in ascending order per semi tone starting with C of the specified octave for Pin2. For example: if set to 1 --> Pin2 = C1, Pin3 = C#1, Pin4 = D1 etc. (standard for most drum sequencers).
+You can change the octave at the following line of code (change the int on "int octave = 1;" to example 3, "int octave = 3;"):
+
 # Panel
 Currently there’s no already made panel for this.
 
