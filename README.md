@@ -12,7 +12,7 @@ So it requires 14-16HP panel in Eurorack format.
 
 On the front side, there's the 12 output jacks (thonkiconn) including leds and resistors.
 ![image of midi2trigger front side]
-(https://raw.githubusercontent.com/moioonjake/midi2trigger/master/midi2trigger_v1.1-front.png)
+(https://github.com/moioonjake/midi2trigger/blob/master/midi2trigger_v1.1-back.png)
 
 On the back side, there's the Arduino nano and other related components.
 ![image of midi2trigger back side]
