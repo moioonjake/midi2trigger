@@ -1,5 +1,5 @@
 # Midi2trigger
-Midi2trigger is Eurorack compatible module PCB for external MIDI device to trigger example drum modules. It’s a 100% non-commercial effort developed purely for own educational purposes where I’m trying to learn to understand schematics, KiCad and PCB making.
+Midi2trigger is Arduino based Eurorack compatible module PCB for external MIDI device to trigger example drum modules. It’s a 100% non-commercial effort developed purely for own educational purposes where I’m trying to learn to understand schematics, KiCad and PCB making.
 
 I’d like to hear your feedback if you built this module so I can improve these files.
 
@@ -19,7 +19,7 @@ On the back side, there's the Arduino nano and other related components.<br>
 Arduino Pins are assigned in ascending order per semi tone starting with C of the specified octave for Pin2. For example: if set to 1 --> Pin2 = C1, Pin3 = C#1, Pin4 = D1 etc. (standard for most drum sequencers).
 You can change the octave at the following line of code (change the int on "int octave = 1;" to example 3, "int octave = 3;"):
 
-MIDI In and Thru has numbers on the PCB, those are MIDI connector Pin numbers.
+MIDI In and Thru has numbers on the PCB, those are MIDI connector Pin numbers. I used panel mounted MIDI connectors so there's no footprint on the PCB for those.
 
 # Code
 On the original code Midi thru was OFF ("MIDI.turnThruOff();"), since we have the MIDI >thru option on the PCB I have changed the code so that this is turn ON. If you do not need this option, change it back to OFF.
@@ -28,8 +28,9 @@ On the original code Midi thru was OFF ("MIDI.turnThruOff();"), since we have th
 Currently there’s no already made panel for this.
 
 # Possible updates to v1.2
-- Add: bypass caps to power line, 10uf to positive and GND before and after LM78L05
-- Change: route +5v line from LM78L05 to Arduino +5v instead VIN
+- Add: bypass caps to power line, 10uf to positive and GND before and after LM78L05.
+- Change: route +5v line from LM78L05 to Arduino +5v instead VIN.
+- Change: MIDI In/Thru change from pins to stereo 3.5mm jacks instead of MIDI connectors.
 
 These can be added to current PCB with soldering capacitors straight to LM78L05 and cutting trace and adding jump wire to Arduino +5v pin.
 
