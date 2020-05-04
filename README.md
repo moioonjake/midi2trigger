@@ -4,9 +4,7 @@ Midi2trigger is Eurorack compatible module PCB for external MIDI device to trigg
 I’d like to hear your feedback if you built this module so I can improve these files.
 
 # Design
-At the beginning I never meant to make this as a PCB but I wanted to learn KiCad and schematics so I made this as a learning purposes.
-
-Schematic parts has taken from default Arduino MIDI in/thru schematics and various places.
+......
 
 Arduino Pins are assigned in ascending order per semi tone starting with C of the specified octave for Pin2. For example: if set to 1 --> Pin2 = C1, Pin3 = C#1, Pin4 = D1 etc. (standard for most drum sequencers).
 You can change the octave at the following line of code (change the int on "int octave = 1;" to example 3, "int octave = 3;"):
@@ -25,6 +23,8 @@ These can be added to current PCB with soldering capacitors straight to LM78L05 
 
 # Notes
 I have tested and verified this board and code.
+
+Schematic parts has taken from default Arduino MIDI in/thru schematics and various places.
 
 # Thanks to
 - https://www.lookmumnocomputer.com, where I saw this concept on one of the youtube video
