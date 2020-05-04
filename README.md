@@ -4,7 +4,11 @@ Midi2trigger is Eurorack compatible module PCB for external MIDI device to trigg
 I’d like to hear your feedback if you built this module so I can improve these files.
 
 # Design
-......
+Midi2trigger PCB measurements are following:
+width : 69.09 mm
+height : 80.26 mm
+
+So it requires 14-16HP panel in Eurorack format.
 
 Arduino Pins are assigned in ascending order per semi tone starting with C of the specified octave for Pin2. For example: if set to 1 --> Pin2 = C1, Pin3 = C#1, Pin4 = D1 etc. (standard for most drum sequencers).
 You can change the octave at the following line of code (change the int on "int octave = 1;" to example 3, "int octave = 3;"):
