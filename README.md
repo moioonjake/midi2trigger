@@ -19,6 +19,8 @@ On the back side, there's the Arduino nano and other related components.<br>
 Arduino Pins are assigned in ascending order per semi tone starting with C of the specified octave for Pin2. For example: if set to 1 --> Pin2 = C1, Pin3 = C#1, Pin4 = D1 etc. (standard for most drum sequencers).
 You can change the octave at the following line of code (change the int on "int octave = 1;" to example 3, "int octave = 3;"):
 
+MIDI In and Thru has numbers on the PCB, those are MIDI connector Pin numbers.
+
 # Code
 On the original code Midi thru was OFF ("MIDI.turnThruOff();"), since we have the MIDI >thru option on the PCB I have changed the code so that this is turn ON. If you do not need this option, change it back to OFF.
 
