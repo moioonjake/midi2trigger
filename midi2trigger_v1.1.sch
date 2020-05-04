@@ -1,0 +1,935 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D1
+U 1 1 5E470363
+P 2600 1500
+F 0 "D1" V 2554 1579 50  0000 L CNN
+F 1 "1N4148" V 2645 1579 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P2.54mm_Vertical_AnodeUp" H 2600 1500 50  0001 C CNN
+F 3 "~" H 2600 1500 50  0001 C CNN
+	1    2600 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Isolator:6N136 U1
+U 1 1 5E470ADB
+P 3200 1500
+F 0 "U1" H 3200 1925 50  0000 C CNN
+F 1 "6N136" H 3200 1834 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3000 1200 50  0001 L CIN
+F 3 "https://optoelectronics.liteon.com/upload/download/DS70-2008-0032/6N135-L%206N136-L%20series.pdf" H 3200 1500 50  0001 L CNN
+	1    3200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E46FBE3
+P 2450 1350
+F 0 "R1" V 2243 1350 50  0000 C CNN
+F 1 "220" V 2334 1350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2380 1350 50  0001 C CNN
+F 3 "~" H 2450 1350 50  0001 C CNN
+	1    2450 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 1350 2300 1350
+Connection ~ 2300 1350
+Wire Wire Line
+	2300 1350 2550 1350
+Wire Wire Line
+	2900 1350 2900 1400
+Wire Wire Line
+	1400 1700 2600 1700
+Wire Wire Line
+	2600 1700 2600 1650
+Wire Wire Line
+	2600 1700 2900 1700
+Wire Wire Line
+	2900 1700 2900 1600
+Connection ~ 2600 1700
+Wire Wire Line
+	2600 1350 2900 1350
+Connection ~ 2600 1350
+$Comp
+L Device:R R5
+U 1 1 5E478803
+P 4250 1450
+F 0 "R5" H 4320 1496 50  0000 L CNN
+F 1 "220" H 4320 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 4180 1450 50  0001 C CNN
+F 3 "~" H 4250 1450 50  0001 C CNN
+	1    4250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E47B4DF
+P 3750 1500
+F 0 "R4" V 3543 1500 50  0000 C CNN
+F 1 "4.7K" V 3634 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3680 1500 50  0001 C CNN
+F 3 "~" H 3750 1500 50  0001 C CNN
+	1    3750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E482D7F
+P 2550 2300
+F 0 "R2" V 2343 2300 50  0000 C CNN
+F 1 "220" V 2434 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2480 2300 50  0001 C CNN
+F 3 "~" H 2550 2300 50  0001 C CNN
+	1    2550 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2300 2400 2300
+$Comp
+L Device:R R3
+U 1 1 5E483EDD
+P 2550 2750
+F 0 "R3" V 2343 2750 50  0000 C CNN
+F 1 "220" V 2434 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2480 2750 50  0001 C CNN
+F 3 "~" H 2550 2750 50  0001 C CNN
+	1    2550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 2300 1450 2300
+Wire Wire Line
+	1450 2300 1450 2750
+Wire Wire Line
+	1450 2750 2400 2750
+$Comp
+L Regulator_Linear:LM78L05_TO92 U2
+U 1 1 5E486C77
+P 7200 1300
+F 0 "U2" H 7200 1449 50  0000 C CNN
+F 1 "LM78L05" H 7200 1540 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7200 1525 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf" H 7200 1250 50  0001 C CNN
+	1    7200 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 5E488E53
+P 8000 1250
+F 0 "J3" H 8050 1667 50  0000 C CNN
+F 1 "EURORACK POWERCONNECTOR" H 8050 1576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8000 1250 50  0001 C CNN
+F 3 "~" H 8000 1250 50  0001 C CNN
+	1    8000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1050 7800 1050
+Wire Wire Line
+	8300 1150 7800 1150
+Wire Wire Line
+	8300 1250 7800 1250
+Wire Wire Line
+	8300 1350 7800 1350
+Wire Wire Line
+	8300 1450 7800 1450
+Wire Wire Line
+	8300 1150 8300 1250
+Connection ~ 8300 1150
+Connection ~ 8300 1350
+Connection ~ 8300 1250
+Wire Wire Line
+	8300 1250 8300 1350
+Wire Wire Line
+	7800 1150 7800 1250
+Connection ~ 7800 1150
+Connection ~ 7800 1350
+Connection ~ 7800 1250
+Wire Wire Line
+	7800 1250 7800 1350
+Text Notes 1200 1100 0    50   ~ 0
+MIDI IN
+Text Notes 1200 2100 0    50   ~ 0
+MIDI THRU
+Text Notes 6650 700  0    50   ~ 0
+POWER SECTION
+$Comp
+L Connector:DIN-5_180degree J2
+U 1 1 5E49C64C
+P 1850 1450
+F 0 "J2" H 1850 1175 50  0000 C CNN
+F 1 "MIDI IN" H 1850 1084 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1850 1450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1850 1450 50  0001 C CNN
+	1    1850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DIN-5_180degree J4
+U 1 1 5E49FF09
+P 1850 2400
+F 0 "J4" H 1850 2125 50  0000 C CNN
+F 1 "MIDI THRU" H 1850 2034 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1850 2400 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1850 2400 50  0001 C CNN
+	1    1850 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E4A32E1
+P 5650 2850
+F 0 "R6" H 5580 2804 50  0000 R CNN
+F 1 "1K" H 5580 2895 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 2850 50  0001 C CNN
+F 3 "~" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E4A4D38
+P 5500 2700
+F 0 "D2" H 5493 2916 50  0000 C CNN
+F 1 "LED" H 5493 2825 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 2700 50  0001 C CNN
+F 3 "~" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E4B0C20
+P 5650 3500
+F 0 "R7" H 5580 3454 50  0000 R CNN
+F 1 "1K" H 5580 3545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 3500 50  0001 C CNN
+F 3 "~" H 5650 3500 50  0001 C CNN
+	1    5650 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E4B1238
+P 5500 3350
+F 0 "D3" H 5493 3566 50  0000 C CNN
+F 1 "LED" H 5493 3475 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 3350 50  0001 C CNN
+F 3 "~" H 5500 3350 50  0001 C CNN
+	1    5500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J8
+U 1 1 5E4CEC62
+P 5050 4300
+F 0 "J8" H 5082 4625 50  0000 C CNN
+F 1 "OUT3" H 5082 4534 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 4300 50  0001 C CNN
+F 3 "~" H 5050 4300 50  0001 C CNN
+	1    5050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E4CF4E7
+P 5650 4150
+F 0 "R10" H 5580 4104 50  0000 R CNN
+F 1 "1K" H 5580 4195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 4150 50  0001 C CNN
+F 3 "~" H 5650 4150 50  0001 C CNN
+	1    5650 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5E4CFA6C
+P 5500 4000
+F 0 "D6" H 5493 4216 50  0000 C CNN
+F 1 "LED" H 5493 4125 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 4000 50  0001 C CNN
+F 3 "~" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J6
+U 1 1 5E4DB068
+P 5050 4900
+F 0 "J6" H 5082 5225 50  0000 C CNN
+F 1 "OUT4" H 5082 5134 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 4900 50  0001 C CNN
+F 3 "~" H 5050 4900 50  0001 C CNN
+	1    5050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E4DC0BE
+P 5650 4750
+F 0 "R8" H 5580 4704 50  0000 R CNN
+F 1 "1K" H 5580 4795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 4750 50  0001 C CNN
+F 3 "~" H 5650 4750 50  0001 C CNN
+	1    5650 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5E4DC72A
+P 5500 4600
+F 0 "D4" H 5493 4816 50  0000 C CNN
+F 1 "LED" H 5493 4725 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 4600 50  0001 C CNN
+F 3 "~" H 5500 4600 50  0001 C CNN
+	1    5500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J9
+U 1 1 5E4E8938
+P 5050 5550
+F 0 "J9" H 5082 5875 50  0000 C CNN
+F 1 "OUT5" H 5082 5784 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 5550 50  0001 C CNN
+F 3 "~" H 5050 5550 50  0001 C CNN
+	1    5050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E4E9149
+P 5650 5400
+F 0 "R11" H 5580 5354 50  0000 R CNN
+F 1 "1K" H 5580 5445 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 5400 50  0001 C CNN
+F 3 "~" H 5650 5400 50  0001 C CNN
+	1    5650 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5E4E94D6
+P 5500 5250
+F 0 "D7" H 5493 5466 50  0000 C CNN
+F 1 "LED" H 5493 5375 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 5250 50  0001 C CNN
+F 3 "~" H 5500 5250 50  0001 C CNN
+	1    5500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J7
+U 1 1 5E4EA299
+P 5050 6150
+F 0 "J7" H 5082 6475 50  0000 C CNN
+F 1 "OUT6" H 5082 6384 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 6150 50  0001 C CNN
+F 3 "~" H 5050 6150 50  0001 C CNN
+	1    5050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E4EA914
+P 5650 6000
+F 0 "R9" H 5580 5954 50  0000 R CNN
+F 1 "1K" H 5580 6045 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 5580 6000 50  0001 C CNN
+F 3 "~" H 5650 6000 50  0001 C CNN
+	1    5650 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5E4EAD88
+P 5500 5850
+F 0 "D5" H 5493 6066 50  0000 C CNN
+F 1 "LED" H 5493 5975 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5500 5850 50  0001 C CNN
+F 3 "~" H 5500 5850 50  0001 C CNN
+	1    5500 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J11
+U 1 1 5E50B55C
+P 6300 3000
+F 0 "J11" H 6332 3325 50  0000 C CNN
+F 1 "OUT7" H 6332 3234 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5E50C836
+P 6850 3500
+F 0 "R12" H 6780 3454 50  0000 R CNN
+F 1 "1K" H 6780 3545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 3500 50  0001 C CNN
+F 3 "~" H 6850 3500 50  0001 C CNN
+	1    6850 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5E50CC56
+P 6700 3350
+F 0 "D8" H 6693 3566 50  0000 C CNN
+F 1 "LED" H 6693 3475 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 3350 50  0001 C CNN
+F 3 "~" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5E50D5FC
+P 6850 2850
+F 0 "R13" H 6780 2804 50  0000 R CNN
+F 1 "1K" H 6780 2895 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 2850 50  0001 C CNN
+F 3 "~" H 6850 2850 50  0001 C CNN
+	1    6850 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 5E50D9F2
+P 6700 2700
+F 0 "D9" H 6693 2916 50  0000 C CNN
+F 1 "LED" H 6693 2825 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 2700 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3300 7100 3350
+$Comp
+L Connector:AudioJack2_Ground J12
+U 1 1 5E537402
+P 6300 5500
+F 0 "J12" H 6332 5825 50  0000 C CNN
+F 1 "OUT11" H 6332 5734 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 5500 50  0001 C CNN
+F 3 "~" H 6300 5500 50  0001 C CNN
+	1    6300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J14
+U 1 1 5E537B2B
+P 6300 6150
+F 0 "J14" H 6332 6475 50  0000 C CNN
+F 1 "OUT12" H 6332 6384 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 6150 50  0001 C CNN
+F 3 "~" H 6300 6150 50  0001 C CNN
+	1    6300 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J13
+U 1 1 5E537F9C
+P 6300 4300
+F 0 "J13" H 6332 4625 50  0000 C CNN
+F 1 "OUT9" H 6332 4534 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 4300 50  0001 C CNN
+F 3 "~" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J15
+U 1 1 5E539AC5
+P 6300 4900
+F 0 "J15" H 6332 5225 50  0000 C CNN
+F 1 "OUT10" H 6332 5134 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 4900 50  0001 C CNN
+F 3 "~" H 6300 4900 50  0001 C CNN
+	1    6300 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5E53AA18
+P 6850 6000
+F 0 "R16" H 6780 5954 50  0000 R CNN
+F 1 "1K" H 6780 6045 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 6000 50  0001 C CNN
+F 3 "~" H 6850 6000 50  0001 C CNN
+	1    6850 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5E53AECB
+P 6700 5850
+F 0 "D12" H 6693 6066 50  0000 C CNN
+F 1 "LED" H 6693 5975 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 5850 50  0001 C CNN
+F 3 "~" H 6700 5850 50  0001 C CNN
+	1    6700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5E53DFBA
+P 6850 4750
+F 0 "R17" H 6780 4704 50  0000 R CNN
+F 1 "1K" H 6780 4795 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 4750 50  0001 C CNN
+F 3 "~" H 6850 4750 50  0001 C CNN
+	1    6850 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E53E2DE
+P 6850 5350
+F 0 "R14" H 6780 5304 50  0000 R CNN
+F 1 "1K" H 6780 5395 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 5350 50  0001 C CNN
+F 3 "~" H 6850 5350 50  0001 C CNN
+	1    6850 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 5E53EEDE
+P 6700 4600
+F 0 "D13" H 6693 4816 50  0000 C CNN
+F 1 "LED" H 6693 4725 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 4600 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 5E53F6EF
+P 6700 5200
+F 0 "D10" H 6693 5416 50  0000 C CNN
+F 1 "LED" H 6693 5325 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 5200 50  0001 C CNN
+F 3 "~" H 6700 5200 50  0001 C CNN
+	1    6700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5E540417
+P 6850 4150
+F 0 "R15" H 6780 4104 50  0000 R CNN
+F 1 "1K" H 6780 4195 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 6780 4150 50  0001 C CNN
+F 3 "~" H 6850 4150 50  0001 C CNN
+	1    6850 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5E540B94
+P 6700 4000
+F 0 "D11" H 6693 4216 50  0000 C CNN
+F 1 "LED" H 6693 4125 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 4000 50  0001 C CNN
+F 3 "~" H 6700 4000 50  0001 C CNN
+	1    6700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J5
+U 1 1 5E4B0361
+P 5050 3650
+F 0 "J5" H 5082 3975 50  0000 C CNN
+F 1 "OUT2" H 5082 3884 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 3650 50  0001 C CNN
+F 3 "~" H 5050 3650 50  0001 C CNN
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3550 5250 3550
+Text Label 9850 2700 1    50   ~ 0
+A_VIN
+Text Label 6900 1300 1    50   ~ 0
+A_VIN
+$Comp
+L power:GND #PWR0101
+U 1 1 5E76CF0E
+P 8900 1250
+F 0 "#PWR0101" H 8900 1000 50  0001 C CNN
+F 1 "GND" H 8905 1077 50  0000 C CNN
+F 2 "" H 8900 1250 50  0001 C CNN
+F 3 "" H 8900 1250 50  0001 C CNN
+	1    8900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5E76D98E
+P 9200 1250
+F 0 "#PWR0102" H 9200 1100 50  0001 C CNN
+F 1 "+12V" H 9215 1423 50  0000 C CNN
+F 2 "" H 9200 1250 50  0001 C CNN
+F 3 "" H 9200 1250 50  0001 C CNN
+	1    9200 1250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-12V #PWR0103
+U 1 1 5E76DF9B
+P 9450 1250
+F 0 "#PWR0103" H 9450 1350 50  0001 C CNN
+F 1 "-12V" H 9465 1423 50  0000 C CNN
+F 2 "" H 9450 1250 50  0001 C CNN
+F 3 "" H 9450 1250 50  0001 C CNN
+	1    9450 1250
+	-1   0    0    1   
+$EndComp
+Text Label 9450 1250 1    50   ~ 0
+-12v
+Text Label 9200 1250 1    50   ~ 0
++12v
+Text Label 8900 1250 1    50   ~ 0
+GND
+Text Label 8300 1450 0    50   ~ 0
+-12v
+Text Label 8300 1250 0    50   ~ 0
+GND
+Text Label 8300 1050 0    50   ~ 0
++12v
+Text Label 7200 1000 1    50   ~ 0
+GND
+Wire Wire Line
+	7800 1050 7500 1050
+Wire Wire Line
+	7500 1050 7500 1300
+Connection ~ 7800 1050
+Text Label 9950 4700 3    50   ~ 0
+GND
+Text Label 10050 4700 3    50   ~ 0
+GND
+Wire Wire Line
+	10150 2550 10150 2700
+Text Label 4400 1300 0    50   ~ 0
++5v
+Text Label 10150 2550 1    50   ~ 0
++5v
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5E46CEA7
+P 9950 3700
+F 0 "A1" H 9950 2611 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 9950 2520 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 9950 3700 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 9950 3700 50  0001 C CNN
+	1    9950 3700
+	1    0    0    -1  
+$EndComp
+Text Label 9450 3100 2    50   ~ 0
+A_RX
+Text Label 4400 1600 0    50   ~ 0
+A_RX
+Text Label 3500 1700 0    50   ~ 0
+GND
+Text Label 1850 2100 0    50   ~ 0
+GND
+Text Label 2800 2300 0    50   ~ 0
++5v
+Wire Wire Line
+	2700 2300 2800 2300
+Text Label 9450 3200 2    50   ~ 0
+A_TX
+Text Label 2800 2750 0    50   ~ 0
+A_TX
+Wire Wire Line
+	2700 2750 2800 2750
+Text Label 9450 3300 2    50   ~ 0
+A_D2
+Text Label 5750 3000 0    50   ~ 0
+A_D2
+Text Label 9450 3400 2    50   ~ 0
+A_D3
+Text Label 5750 3650 0    50   ~ 0
+A_D3
+Text Label 9450 3500 2    50   ~ 0
+A_D4
+Text Label 5800 4300 0    50   ~ 0
+A_D4
+Text Label 5800 4900 0    50   ~ 0
+A_D5
+Text Label 9450 3600 2    50   ~ 0
+A_D5
+Text Label 9450 3700 2    50   ~ 0
+A_D6
+Text Label 9450 3800 2    50   ~ 0
+A_D7
+Text Label 9450 3900 2    50   ~ 0
+A_D8
+Text Label 9450 4000 2    50   ~ 0
+A_D9
+Text Label 9450 4100 2    50   ~ 0
+A_D10
+Text Label 9450 4200 2    50   ~ 0
+A_D11
+Text Label 9450 4300 2    50   ~ 0
+A_D12
+Text Label 9450 4400 2    50   ~ 0
+A_D13
+Text Label 5800 5550 0    50   ~ 0
+A_D6
+Text Label 5800 6150 0    50   ~ 0
+A_D7
+Text Label 6950 3000 0    50   ~ 0
+A_D8
+Text Label 6950 3650 0    50   ~ 0
+A_D9
+Text Label 6950 4300 0    50   ~ 0
+A_D10
+Text Label 6950 4900 0    50   ~ 0
+A_D11
+Text Label 6950 5500 0    50   ~ 0
+A_D12
+Text Label 6950 6150 0    50   ~ 0
+A_D13
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5E4A134E
+P 5050 3000
+F 0 "J1" H 5082 3325 50  0000 C CNN
+F 1 "OUT1" H 5082 3234 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5050 3000 50  0001 C CNN
+F 3 "~" H 5050 3000 50  0001 C CNN
+	1    5050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3000 5650 3000
+Text Label 5250 2650 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 2650 5250 2700
+Connection ~ 5250 2700
+Wire Wire Line
+	5250 2700 5250 2900
+Text Notes 9450 2550 2    50   ~ 0
+ARDUINO\n
+Wire Wire Line
+	5750 3650 5650 3650
+Connection ~ 5650 3650
+Wire Wire Line
+	5650 3650 5250 3650
+Text Label 5250 3300 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 3300 5250 3350
+Connection ~ 5250 3550
+Wire Wire Line
+	5350 3350 5250 3350
+Connection ~ 5250 3350
+Wire Wire Line
+	5250 3350 5250 3550
+Connection ~ 5650 3000
+Wire Wire Line
+	5650 3000 5750 3000
+Text Label 5250 3950 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 3950 5250 4000
+Wire Wire Line
+	5350 4000 5250 4000
+Connection ~ 5250 4000
+Wire Wire Line
+	5250 4000 5250 4200
+Wire Wire Line
+	5800 4300 5650 4300
+Connection ~ 5650 4300
+Wire Wire Line
+	5650 4300 5250 4300
+Wire Wire Line
+	5250 4900 5650 4900
+Connection ~ 5650 4900
+Wire Wire Line
+	5650 4900 5800 4900
+Text Label 5250 4550 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 4550 5250 4600
+Wire Wire Line
+	5350 4600 5250 4600
+Connection ~ 5250 4600
+Wire Wire Line
+	5250 4600 5250 4800
+Text Label 5250 5200 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 5550 5650 5550
+Connection ~ 5650 5550
+Wire Wire Line
+	5650 5550 5800 5550
+Wire Wire Line
+	5250 5200 5250 5250
+Wire Wire Line
+	5350 5250 5250 5250
+Connection ~ 5250 5250
+Wire Wire Line
+	5250 5250 5250 5450
+Text Label 5250 5800 1    50   ~ 0
+GND
+Wire Wire Line
+	5250 5800 5250 5850
+Wire Wire Line
+	5350 5850 5250 5850
+Connection ~ 5250 5850
+Wire Wire Line
+	5250 5850 5250 6050
+Wire Wire Line
+	5250 6150 5650 6150
+Connection ~ 5650 6150
+Wire Wire Line
+	5650 6150 5800 6150
+Text Label 6500 2650 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 3000 6850 3000
+Connection ~ 6850 3000
+Wire Wire Line
+	6850 3000 6950 3000
+Wire Wire Line
+	6500 2650 6500 2700
+Wire Wire Line
+	6550 2700 6500 2700
+Connection ~ 6500 2700
+Wire Wire Line
+	6500 2700 6500 2900
+$Comp
+L Connector:AudioJack2_Ground J10
+U 1 1 5E50C0B6
+P 6300 3650
+F 0 "J10" H 6332 3975 50  0000 C CNN
+F 1 "OUT8" H 6332 3884 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 3650 50  0001 C CNN
+F 3 "~" H 6300 3650 50  0001 C CNN
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6500 3300 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 3300 6500 3350
+Wire Wire Line
+	6550 3350 6500 3350
+Connection ~ 6500 3350
+Wire Wire Line
+	6500 3350 6500 3550
+Wire Wire Line
+	6500 3650 6850 3650
+Connection ~ 6850 3650
+Wire Wire Line
+	6850 3650 6950 3650
+Text Label 6500 3950 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 3950 6500 4000
+Wire Wire Line
+	6550 4000 6500 4000
+Connection ~ 6500 4000
+Wire Wire Line
+	6500 4000 6500 4200
+Wire Wire Line
+	6500 4300 6850 4300
+Connection ~ 6850 4300
+Wire Wire Line
+	6850 4300 6950 4300
+Text Label 6500 4550 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 4550 6500 4600
+Wire Wire Line
+	6550 4600 6500 4600
+Connection ~ 6500 4600
+Wire Wire Line
+	6500 4600 6500 4800
+Wire Wire Line
+	6500 4900 6850 4900
+Connection ~ 6850 4900
+Wire Wire Line
+	6850 4900 6950 4900
+Text Label 6500 5150 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 5150 6500 5200
+Wire Wire Line
+	6550 5200 6500 5200
+Connection ~ 6500 5200
+Wire Wire Line
+	6500 5200 6500 5400
+Wire Wire Line
+	6500 5500 6850 5500
+Connection ~ 6850 5500
+Wire Wire Line
+	6850 5500 6950 5500
+Text Label 6500 5800 1    50   ~ 0
+GND
+Wire Wire Line
+	6500 5800 6500 5850
+Wire Wire Line
+	6550 5850 6500 5850
+Connection ~ 6500 5850
+Wire Wire Line
+	6500 5850 6500 6050
+Wire Wire Line
+	6500 6150 6850 6150
+Connection ~ 6850 6150
+Wire Wire Line
+	6850 6150 6950 6150
+Text Notes 5000 2450 2    50   ~ 0
+OUTPUTS
+Wire Wire Line
+	3500 1300 4250 1300
+Connection ~ 4250 1300
+Wire Wire Line
+	4250 1300 4400 1300
+Wire Wire Line
+	3500 1600 4250 1600
+Connection ~ 4250 1600
+Wire Wire Line
+	4250 1600 4400 1600
+Text Label 3900 1500 0    50   ~ 0
+GND
+Wire Wire Line
+	3500 1400 3600 1400
+Wire Wire Line
+	3600 1400 3600 1500
+Wire Wire Line
+	5250 2700 5350 2700
+Connection ~ 5350 2700
+Wire Wire Line
+	5350 2700 5450 2700
+Wire Wire Line
+	1550 1450 1400 1450
+Wire Wire Line
+	1400 1450 1400 1700
+Text Notes 800  1350 0    50   ~ 0
+NOTE!\nIncorrect, should be pin4\ninstead pin1
+$EndSCHEMATC
