@@ -27,6 +27,6 @@ I have tested and verified this board and code.
 - Pieterv1 @circuitbenders.com, code and explanations that I found here: https://www.circuitbenders.co.uk/forum/index.php?topic=2656.0 
 
 # License
-Code (AVR projects): GPL3.0.
-Code (STM32F projects): MIT license.
+Code (AVR projects): GPL3.0.<br>
+Code (STM32F projects): MIT license.<br>
 Hardware: cc-by-sa-3.0
