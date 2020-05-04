@@ -24,7 +24,7 @@ These can be added to current PCB with soldering capacitors straight to LM78L05 
 I have tested and verified this board and code.
 
 # Thanks to
-- https://www.lookmumnocomputer.com, where I saw this on the one youtube video
+- https://www.lookmumnocomputer.com, where I saw this concept on one of the youtube video
 - Pieterv1 @circuitbenders.com, code and explanations that I found here: https://www.circuitbenders.co.uk/forum/index.php?topic=2656.0 
 
 # License
