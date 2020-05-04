@@ -23,8 +23,8 @@ These can be added to current PCB with soldering capacitors straight to LM7805 a
 I have tested and verified this board and code.
 
 # Thanks to
-- LookMumNoComputer (https://www.lookmumnocomputer.com) where I saw this on the one youtube video
-- Pieterv1 @circuitbenders.com | code and explanations that I found here: https://www.circuitbenders.co.uk/forum/index.php?topic=2656.0 
+- https://www.lookmumnocomputer.com, where I saw this on the one youtube video
+- Pieterv1 @circuitbenders.com, code and explanations that I found here: https://www.circuitbenders.co.uk/forum/index.php?topic=2656.0 
 
 # License
 Hardware: cc-by-sa-3.0
