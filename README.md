@@ -14,7 +14,7 @@ You can change the octave at the following line of code (change the int on "int 
 # Panel
 Currently there’s no already made panel for this.
 
-# Possible updates to v1.1
+# Possible updates to v1.2
 - Add: bypass caps to power line, 10uf to positive and GND before and after LM78L05
 - Change: route +5v line from LM78L05 to Arduino +5v instead VIN
 
