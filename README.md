@@ -5,8 +5,8 @@ I’d like to hear your feedback if you built this module so I can improve these
 
 # Design
 Midi2trigger PCB measurements are following:
-width : 69.09 mm
-height : 80.26 mm
+<br>width : 69.09 mm
+<br>height : 80.26 mm
 
 So it requires 14-16HP panel in Eurorack format.
 
