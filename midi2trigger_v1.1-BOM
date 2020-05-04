@@ -1,0 +1,20 @@
+midi2trigger v1.1 BOM
+
+12x Thonkiconn 3.5mm jacks
+12x 3mm led
+12x 1k resistor
+4x 220r resistor
+1x 4.7k resistor
+1x LM78L05
+1x 1N4148
+1x 6N138
+1x Arduino Nano
+1x eurorack power connector or 2x5 pins
+1x MIDI connector (midi in)
+Wire for connecting MIDI connector
+
+optionals:
+1x MIDI connector (midi thru)
+1x IC holder for 1N138
+Female headers for Arduino
+
